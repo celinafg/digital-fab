@@ -4,6 +4,6 @@ import sitemap from "@astrojs/sitemap";
 import tailwind from "@astrojs/tailwind";
 
 export default defineConfig({
-  site: "https://celinafg.github.io",
+  base: "https:/celinafg.github.io/digital-fab/",
   integrations: [mdx(), sitemap(), tailwind()],
 });
