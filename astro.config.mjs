@@ -7,4 +7,7 @@ export default defineConfig({
   site: "https://celinafg.github.io",
   base: ".",
   integrations: [mdx(), sitemap(), tailwind()],
+  build: {
+    assets: "astro",
+  },
 });
