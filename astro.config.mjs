@@ -8,6 +8,6 @@ export default defineConfig({
   integrations: [mdx(), sitemap(), tailwind()],
   output: "static",
   build: {
-    site: "https://celinafg.github.io/digital-fab",
+    site: "https://celinafg.github.io",
   },
 });
