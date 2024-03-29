@@ -5,6 +5,5 @@ import tailwind from "@astrojs/tailwind";
 
 export default defineConfig({
   site: "https://celinafg.github.io",
-  repo: "digital-fab",
   integrations: [mdx(), sitemap(), tailwind()],
 });
