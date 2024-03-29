@@ -36,3 +36,5 @@ export const SOCIALS: Socials = [
     HREF: "https://github.com/celinafg",
   },
 ];
+
+export const BASE_URL: string = "digital-fab";
