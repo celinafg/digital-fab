@@ -7,7 +7,5 @@ export default defineConfig({
   base: ".",
   integrations: [mdx(), sitemap(), tailwind()],
   output: "static",
-  build: {
-    site: "https://celinafg.github.io",
-  },
+  site: "https://celinafg.github.io",
 });
