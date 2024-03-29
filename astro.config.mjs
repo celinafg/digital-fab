@@ -4,10 +4,10 @@ import sitemap from "@astrojs/sitemap";
 import tailwind from "@astrojs/tailwind";
 
 export default defineConfig({
-  site: "https://celinafg.github.io",
   base: ".",
   integrations: [mdx(), sitemap(), tailwind()],
+  output: "static",
   build: {
-    assets: "astro",
+    site: "https://celinafg.github.io/digital-fab",
   },
 });
