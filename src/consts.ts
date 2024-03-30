@@ -3,3 +3,4 @@
 
 export const SITE_TITLE = "Digital Fabrication Projects";
 export const SITE_DESCRIPTION = "Welcome to my website!";
+export const BASE_URL = "digital-fab";
