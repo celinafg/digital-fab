@@ -7,6 +7,6 @@ import sitemap from "@astrojs/sitemap";
 export default defineConfig({
   site: "https://celinafg.github.io",
   publicDir: "/digital-fab",
-  base: "/digital-fab",
+  base: "/digital-fab/",
   integrations: [mdx(), sitemap()],
 });
