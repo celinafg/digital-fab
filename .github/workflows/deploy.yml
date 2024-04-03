@@ -24,14 +24,8 @@ jobs:
           node-version: 20 # The specific version of Node that should be used to build your site. Defaults to 18. (optional)
           package-manager: pnpm@latest # The Node package manager that should be used to install dependencies and build your site. Automatically detected based on your lockfile. (optional)
       - name: Build Astro
-      
+
         run: npm run build --if-present
-
-      - name: Upload artifact
-          uses: actions/upload-pages-artifact@v1
-          with:
-            path: ./dist
-
 
   deploy:
     needs: build

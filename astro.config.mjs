@@ -9,4 +9,5 @@ export default defineConfig({
   publicDir: "/digital-fab",
   base: "/digital-fab/",
   integrations: [mdx(), sitemap()],
+  base: "digital-fab",
 });
