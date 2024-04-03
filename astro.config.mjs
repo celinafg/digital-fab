@@ -3,9 +3,15 @@ import mdx from "@astrojs/mdx";
 
 import sitemap from "@astrojs/sitemap";
 
-// https://astro.build/config
+const VERCEL_PREVIEW_SITE =
+  process.env.VERCEL_ENV !== "production" &&
+  process.env.VERCEL_URL &&
+  `https://${process.env.VERCEL_URL}`;
+
+const site = VERCEL_PREVIEW_SITE || "https://celinafg.github.io/digital-fab";
+
 export default defineConfig({
-  site: "https://celinafg.github.io",
+  site,
   integrations: [mdx(), sitemap()],
   base: "digital-fab",
   outDir: "./docs",
