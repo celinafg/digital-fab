@@ -2,12 +2,16 @@
   "name": "digifab",
   "type": "module",
   "version": "0.0.1",
+  "homepage": "https://celinafg.github.io/digital-fab",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
+
   },
   "dependencies": {
     "@astrojs/check": "^0.5.10",
@@ -15,6 +19,7 @@
     "@astrojs/rss": "^4.0.5",
     "@astrojs/sitemap": "^3.1.2",
     "astro": "^4.5.12",
+    "gh-pages": "^6.1.1",
     "typescript": "^5.4.3"
   }
 }
