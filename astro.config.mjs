@@ -5,8 +5,8 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://celinafg.github.io/digital-fab",
-  // publicDir: "/digital-fab",
-  // base: "/digital-fab",
+  site: "https://celinafg.github.io",
+  publicDir: "/digital-fab",
+  base: "/digital-fab",
   integrations: [mdx(), sitemap()],
 });
