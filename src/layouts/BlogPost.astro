@@ -59,7 +59,7 @@ const { title, description, pubDate, updatedDate, heroImage, sourcefile } = Astr
 		<main>
 			<article>
 				<div class="hero-image">
-					{heroImage && <img width={1020} height={510} src={`/digital-fab/${heroImage}`} alt="" />}
+					{heroImage && <img width={1020} height={510} src={`${heroImage}`} alt="" />}
 				</div>
 				<div class="prose">
 					<div class="title">
@@ -74,7 +74,7 @@ const { title, description, pubDate, updatedDate, heroImage, sourcefile } = Astr
 							}
 						</div>
 						<h1>{title}</h1>
-						<a href={`/digital-fab/${sourcefile}`}>sourcefile</a>
+						<a href={`${sourcefile}`}>sourcefile</a>
 						<hr />
 					</div>
 					<slot />
