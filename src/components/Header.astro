@@ -5,7 +5,9 @@ import { SITE_TITLE } from '../consts';
 
 <header>
 	<nav>
-		<h2><a href="/digital-fab">Home</a></h2>
+		<h2 class="home">
+			<img src="/digital-fab/square.png" width="30" height="30" alt="">
+			<a href="/digital-fab">Home</a></h2>
 
 		<div class="social-links">
 			<!-- <a href="https://m.webtoo.ls/@astro" target="_blank">
@@ -39,6 +41,12 @@ import { SITE_TITLE } from '../consts';
 	</nav>
 </header>
 <style>
+
+	.home {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
 	header {
 		margin: 0;
 		padding: 0 1em;

@@ -71,6 +71,8 @@ const posts = (await getCollection('blog')).sort(
   			background-position: center;
   			background-repeat: no-repeat;
   			background-size: cover;
+
+			
 			@media (max-width: 720px) {
 				ul {
 					gap: 0.5em;
@@ -91,6 +93,7 @@ const posts = (await getCollection('blog')).sort(
 	<body>
 		<Header />
 		<main>
+			<Image width={200} height={200} src="/digital-fab/square.png" alt={'dog with tongue out'} class="dog"/>
 			<h1>Hello!</h1>
 			<p>
 				I'm Celina, and on this site you will find my <strike>attempts</strike> projects on digital fabrication. 
