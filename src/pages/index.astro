@@ -101,7 +101,7 @@ const posts = (await getCollection('blog')).sort(
 
 			<section>
 				<ul>
-					{posts.filter(post => post.data.number > 0).map((post) => (						
+					{posts.map((post) => (						
 							<li>
 								<a href={`/digital-fab/blog/${post.slug}/`}>
 									<Image width={720} height={360} src={`/digital-fab${post.data.heroImage}`} alt="" />
