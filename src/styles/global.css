@@ -5,7 +5,7 @@
  */
 
 :root {
-  --accent: #525ab5;
+  --accent: #2337ff;
   --accent-dark: #000d8a;
   --black: 15, 18, 25;
   --gray: 96, 115, 159;
@@ -78,9 +78,9 @@ h3,
 h4,
 h5,
 h6 {
+  margin: 0 0 0.5rem 0;
   color: rgb(var(--black));
   line-height: 1.2;
-  padding-top: 2rem;
 }
 h1 {
   font-size: 3.052em;
@@ -126,8 +126,7 @@ table {
 img {
   max-width: 100%;
   height: auto;
-  border-radius: 8px;
-  margin: 0 auto;
+  /* border-radius: 8px; */
 }
 code {
   padding: 2px 5px;
@@ -179,29 +178,4 @@ hr {
 
 mark {
   background-color: var(--highlight);
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 20px 0;
-  table-layout: fixed;
-}
-
-th {
-  background-color: #fff9ce;
-  color: #333333;
-  font-weight: normal;
-  padding: 12px 15px;
-  text-align: left;
-  border-bottom: 1px solid #fff9ce;
-}
-
-td {
-  text-align: left;
-  border-bottom: 3px solid #fff9ce;
-}
-
-img {
-  margin: 1rem;
 }
