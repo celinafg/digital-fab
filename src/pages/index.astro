@@ -102,18 +102,18 @@ const posts = (await getCollection('blog')).sort(
 
 			<section>
 				<ul>
-					{posts.map((post) => (						
-							<li>
-								<a href={`/digital-fab/blog/${post.slug}/`}>
-									<Image width={300} height={300} src={`/digital-fab${post.data.heroImage}`} alt="" />
-									<h4 class="title">{post.data.title}</h4>
-									<p class="date">
-										Assignment {post.data.number}
-									</p>
-								</a>
-							</li>
-						))
-					}
+					{posts.filter(post => post.data.status !== 'draft').map((post) => (
+    <li>
+        <a href={`/digital-fab/blog/${post.slug}/`}>
+            <Image width={300} height={300} src={`/digital-fab${post.data.heroImage}`} alt="" />
+            <h4 class="title">{post.data.title}</h4>
+            <p class="date">
+                Assignment {post.data.number}
+            </p>
+        </a>
+    </li>
+))}
+
 				</ul>
 			</section>
 		</main>

@@ -12,6 +12,7 @@ const blog = defineCollection({
     heroImage: z.string().optional(),
     sourcefile: z.string().optional(),
     number: z.number().optional(),
+    status: z.string().optional(),
   }),
 });
 
