@@ -6,6 +6,8 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 import { getCollection } from 'astro:content';
 import FormattedDate from '../components/FormattedDate.astro';
 import { Image } from 'astro:assets';
+import myImage from '../../src/content/images/wa.jpeg'; // Image is 1600x900
+
 
 
 const posts = (await getCollection('blog')).sort(
@@ -93,8 +95,9 @@ const posts = (await getCollection('blog')).sort(
 	<body>
 		<Header />
 		<main>
-			<Image width={200} height={200} src="/digital-fab/square.png" alt={'dog with tongue out'} class="dog"/>
 			<h1>Hello!</h1>
+			<Image width={300} height={300} src={myImage} alt="" />
+
 			<p>
 				I'm Celina, and on this site you will find my <strike>attempts</strike> projects on digital fabrication. 
 			</p>
@@ -104,7 +107,7 @@ const posts = (await getCollection('blog')).sort(
 					{posts.map((post) => (						
 							<li>
 								<a href={`/digital-fab/blog/${post.slug}/`}>
-									<Image width={720} height={360} src={`/digital-fab${post.data.heroImage}`} alt="" />
+									<Image width={300} height={300} src={`/digital-fab${post.data.heroImage}`} alt="" />
 									<h4 class="title">{post.data.title}</h4>
 									<p class="date">
 										Assignment {post.data.number}

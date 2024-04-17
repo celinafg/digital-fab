@@ -5,9 +5,14 @@ import { SITE_TITLE } from '../consts';
 
 <header>
 	<nav>
-		<h2 class="home">
-			<img src="/digital-fab/square.png" width="30" height="30" alt="">
-			<a href="/digital-fab">Home</a></h2>
+		<div class="home">
+
+		<a href="/digital-fab" class="home">
+<div class="two">	<img src="/digital-fab/square.png" width="30" height="30" alt="" class="icon">
+	<h3>Home</h3></div>
+		
+		</a>
+	</div>
 
 		<div class="social-links">
 			<!-- <a href="https://m.webtoo.ls/@astro" target="_blank">
@@ -41,21 +46,24 @@ import { SITE_TITLE } from '../consts';
 	</nav>
 </header>
 <style>
+.icon {
+	width: 9vw;
+}
+
+.two {
+	display: flex;
+	align-items: center;
+}
 
 	.home {
 		display: flex;
 		flex-direction: row;
-		align-items: center;
+		align-items: baseline;
 	}
-	header {
+
+	h3 {
 		margin: 0;
-		padding: 0 1em;
-		background: transparent;
-		/* box-shadow: 0 2px 8px rgba(var(--black), 5%); */
-	}
-	h2 {
-		margin: 0;
-		font-size: 1em;
+		font-size: 3rem;
 	}
 
 	h2 a,
@@ -64,11 +72,12 @@ import { SITE_TITLE } from '../consts';
 	}
 	nav {
 		display: flex;
-		align-items: center;
+		flex-direction: row;
 		justify-content: space-between;
+		align-items: center;
+		padding: 0; 
 	}
 	nav a {
-		padding: 1.8em 0.5em;
 		color: var(--black);
 		border-bottom: 4px solid transparent;
 		text-decoration: none;
@@ -77,6 +86,11 @@ import { SITE_TITLE } from '../consts';
 		text-decoration: none;
 		border-bottom-color: var(--accent);
 	}
+
+	h3 {
+		padding-top: 0;
+	}
+	
 	.social-links,
 	.social-links a {
 		display: flex;
