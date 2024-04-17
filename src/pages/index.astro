@@ -6,7 +6,6 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 import { getCollection } from 'astro:content';
 import FormattedDate from '../components/FormattedDate.astro';
 import { Image } from 'astro:assets';
-import myImage from '../../src/content/images/wa.jpeg'; // Image is 1600x900
 
 
 
@@ -96,7 +95,6 @@ const posts = (await getCollection('blog')).sort(
 		<Header />
 		<main>
 			<h1>Hello!</h1>
-			<Image width={300} height={300} src={myImage} alt="" />
 
 			<p>
 				I'm Celina, and on this site you will find my <strike>attempts</strike> projects on digital fabrication. 
