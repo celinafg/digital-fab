@@ -14,5 +14,5 @@ export default defineConfig({
   site,
   integrations: [mdx(), sitemap()],
   base: "digital-fab",
-  outDir: "./docs",
+  outDir: "./dist",
 });
