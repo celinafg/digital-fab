@@ -1,0 +1,53 @@
+.spin-container {
+  display: inline-block; /* Ensures the container doesn't take up more space than it needs */
+}
+
+.spinning-image {
+  width: 100px; /* Adjust the size as needed */
+  height: auto; /* Maintain aspect ratio */
+  transition: transform 0.3s ease-in-out; /* Smooth transition for other transformations */
+}
+
+.spin-container:hover .spinning-image {
+  animation: spin 0.5s linear 1; /* Adjust time as necessary */
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+  padding-left: 20px;
+  color: white;
+  display: flex;
+}
+
+.logo:hover {
+  width: 10rem;
+  color: black;
+}
+
+.logo img {
+  width: 8rem;
+  height: auto;
+  padding-top: 20px;
+  transition: transform 0.5s ease-in-out;
+}
+
+@media (max-width: 720px) {
+  .logo:hover {
+    color: white;
+  }
+}

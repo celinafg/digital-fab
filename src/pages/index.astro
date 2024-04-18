@@ -8,7 +8,6 @@ import FormattedDate from '../components/FormattedDate.astro';
 import { Image } from 'astro:assets';
 
 
-
 const posts = (await getCollection('blog')).sort(
 	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
 );
@@ -27,15 +26,17 @@ const posts = (await getCollection('blog')).sort(
 				margin: 5rem 0;
 			}
 			ul {
-				display: flex;
-				flex-wrap: wrap;
-				gap: 2rem;
 				list-style-type: none;
-				margin: 0;
-				padding: 0;
+    padding: 0; 
+    margin: 0; 
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 20px; 
 			}
 			ul li {
-				width: calc(50% - 1rem);
+				/* width: calc(50% - 1rem); */
+				flex: 1 1 25%; 
+
 			}
 			ul li * {
 				text-decoration: none;
@@ -47,11 +48,9 @@ const posts = (await getCollection('blog')).sort(
 			}
 			ul li img {
 				margin-bottom: 0.5rem;
-				/* border-radius: 12px; */
+				border-radius: 12px;
 			}
-			ul li a {
-				display: block;
-			}
+		
 			.title {
 				margin: 0;
 				color: rgb(var(--black));
@@ -68,10 +67,7 @@ const posts = (await getCollection('blog')).sort(
 			ul a:hover img {
 				box-shadow: var(--box-shadow);
 			}
-			background-attachment: fixed;
-  			background-position: center;
-  			background-repeat: no-repeat;
-  			background-size: cover;
+			
 
 			
 			@media (max-width: 720px) {
@@ -79,8 +75,9 @@ const posts = (await getCollection('blog')).sort(
 					gap: 0.5em;
 				}
 				ul li {
-					width: 100%;
+					flex: 1 1 100%; 
 					text-align: center;
+					margin: 0 auto;
 				}
 				ul li:first-child {
 					margin-bottom: 0;
@@ -88,12 +85,17 @@ const posts = (await getCollection('blog')).sort(
 				ul li:first-child .title {
 					font-size: 1.563em;
 				}
+
+				h1 {
+					padding-top: 4rem;
+				}
 			}
 		</style>
+
 	</head>
-	<body>
+	<body >
 		<Header />
-		<main>
+		<main >
 			<h1>Hello!</h1>
 
 			<p>
@@ -118,5 +120,6 @@ const posts = (await getCollection('blog')).sort(
 			</section>
 		</main>
 		<Footer />
+	
 	</body>
 </html>

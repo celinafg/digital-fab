@@ -18,7 +18,6 @@ const { title, description, pubDate, updatedDate, heroImage, sourcefile } = Astr
 		<style>
 			main {
 				width: calc(100% - 2em);
-				max-width: 100%;
 				margin: 0;
 			}
 			 .hero-image {
@@ -55,8 +54,14 @@ const { title, description, pubDate, updatedDate, heroImage, sourcefile } = Astr
 
 			@media (max-width: 720px) {
 .prose {
-	width: 88vw;
-}}
+	width: calc(100% - 3rem);
+}
+
+img {
+	margin: 0 !important;
+}
+
+}
 		</style>
 	</head>
 
