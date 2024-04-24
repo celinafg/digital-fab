@@ -1,9 +1,10 @@
 ---
-title: "A box"
-description: "Design and print a box that can hold sugar. The fit should be such that nothing spills out."
-pubDate: "Apr 24 2024"
-heroImage: "https://res.cloudinary.com/digifab/image/upload/v1713989046/digital-fab/a4/xc6ah0zessrhwnyjn9dp.jpg"
+title: " Four"
+description: "Lorem ipsum dolor sit amet"
+pubDate: "Jul 08 2024"
+heroImage: "/georgePlay.jpg"
 number: 4
+status: draft
 ---
 
 Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.

@@ -5,8 +5,7 @@ import Footer from '../../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 import { getCollection } from 'astro:content';
 import FormattedDate from '../../components/FormattedDate.astro';
-import { Image } from 'astro:assets';
-
+import CldImage from '../../components/CldImage.astro';
 
 const posts = (await getCollection('blog')).sort(
 	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
@@ -99,7 +98,7 @@ const posts = (await getCollection('blog')).sort(
 						posts.map((post) => (
 							<li>
 								<a href={`/digital-fab/blog/${post.slug}/`}>
-									<Image width={720} height={360} src={`/digital-fab${post.data.heroImage}`} alt="" />
+									<CldImage width={''} height={''}  alt="" src={`/digital-fab/${post.data.heroImage}`}/>
 									<h4 class="title">{post.data.title}</h4>
 									<p class="date">
 										<FormattedDate date={post.data.pubDate} />
