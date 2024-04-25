@@ -11,7 +11,7 @@ function Logo() {
       onMouseLeave={() => setIsHovered(false)}
     >
       <img
-        src="/digital-fab/square.png"
+        src="https://res.cloudinary.com/digifab/image/upload/v1714008645/digital-fab/square_n7urev.png"
         alt="Logo"
         className="spinning-image"
       />
