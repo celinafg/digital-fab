@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import "./logo.css";
 
 function Logo() {
@@ -11,7 +11,7 @@ function Logo() {
       onMouseLeave={() => setIsHovered(false)}
     >
       <img
-        src="https://res.cloudinary.com/digifab/image/upload/v1714008645/digital-fab/square_n7urev.png"
+        src="/digital-fab/square.png"
         alt="Logo"
         className="spinning-image"
       />
